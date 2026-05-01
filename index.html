@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24点游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="game-title">24点游戏</h1>
+        <div class="cards-container" id="cards-container">
+            <!-- 4张数字卡片将由脚本生成 -->
+            <div class="card"><span class="num">?</span></div>
+            <div class="card"><span class="num">?</span></div>
+            <div class="card"><span class="num">?</span></div>
+            <div class="card"><span class="num">?</span></div>
+        </div>
+        <div class="button-group">
+            <button id="refresh-btn">换一组数字</button>
+            <button id="show-answer-btn">公布答案</button>
+        </div>
+        <div id="answer-container" class="answer-container"></div>
+    </div>
+    <div id="toast" class="toast">无法生成24</div>
+    <script src="script.js"></script>
+</body>
+</html>
